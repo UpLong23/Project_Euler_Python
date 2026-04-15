@@ -1,11 +1,7 @@
-i, j = 100, 100
-l=[]
-for i in range(100,1000):
-    for j in range(100,1000):
-        l_1 = list(str(i*j))
-        l_2 = list(reversed(l_1))
-        if l_1== l_2:
-           l.append(i*j)
-print(max(l))
+from sympy.ntheory.factor_ import smoothness, factorint
 
-    
+"""The prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the number 600851475143 ?"""
+# print(smoothness(600851475143))
+
+print(factorint(600851475143, verbose=True))
